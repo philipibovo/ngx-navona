@@ -1,0 +1,106 @@
+/*!
+ * 2020.05.18
+ * ngx-navona 2.0.0 (http://philipi.bovo.me/navona/ngx)
+ * By Philipi Bovo
+ */
+
+.navona {
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: -200%;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 30px;
+  font-family: Verdana, Geneva, sans-serif;
+  z-index: 2147483646;
+  color: #fff;
+}
+
+.navona.show {
+  left: 0;
+}
+
+.navona > div {
+  position: relative;
+  float: left;
+  height: 100%;
+  box-sizing: border-box;
+  box-shadow: -5px 0px 15px 0px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  background: #111;
+}
+
+.navona > div > img {
+  object-fit: cover;
+}
+
+.navona > div > p {
+  opacity: 0;
+  position: absolute;
+  padding: 0 20px;
+  line-height: 95px;
+  bottom: -16px;
+  text-align: center;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.6);
+  transition: opacity 500ms;
+}
+
+.navona > div.active:hover > p {
+  opacity: 1;
+  transition: opacity 500ms;
+  transition-delay: 1s;
+}
+
+.navona > div.hide {
+  display: none;
+}
+
+.navona > div.message-portrait {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: #000000;
+}
+
+.navona > div.message-portrait > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.navona > div.message-portrait > div > img {
+  width: 100%;
+}
+
+#navona-close-button {
+  position: fixed;
+  opacity: 0;
+  top: 10px;
+  right: -150px;
+  width: 30px;
+  height: 30px;
+  font-size: 22px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  font-family: "Lucida Console", Monaco, monospace;
+  color: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 2147483647;
+}
+
+#navona-close-button.show {
+  right: 15px;
+}
+
+.navona-hidden-scroll {
+  overflow: hidden;
+}

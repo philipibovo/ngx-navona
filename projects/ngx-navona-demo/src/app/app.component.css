@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap");
+
+header,
+main,
+section,
+header {
+  width: 100%;
+  padding: 4% 0 3.5% 0;
+}
+
+header {
+  color: #fff;
+  background-image: linear-gradient(45deg, #ad3465, #d7943d);
+  text-align: center;
+}
+
+header > img {
+  width: 320px;
+}
+
+header > .sys-name {
+  font-family: "Montserrat", sans-serif;
+  font-size: 55px;
+  cursor: default;
+  margin-top: -15px;
+}
+
+section {
+  font-family: "Roboto", sans-serif;
+  width: 80%;
+  margin: 0;
+  padding: 0% 10% 3% 10%;
+}
+
+section > .title {
+  font-size: 40px;
+  font-weight: normal;
+  padding: 25px 0;
+  cursor: default;
+  text-align: center;
+}
+
+section > .item {
+  height: 220px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 30px;
+}
+
+section > .item > div {
+  float: left;
+  box-sizing: border-box;
+}
+
+section > .item > div:first-child {
+  width: 420px;
+  height: 220px;
+}
+
+section > .item > div:last-child {
+  width: calc(100% - 420px);
+  height: 220px;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+section > .item > div > img {
+  cursor: pointer;
+}
+
+section > .item > div > ul {
+  width: 100%;
+  list-style: none;
+}
+
+section > .website {
+  text-align: center;
+}
+
+.not {
+  text-decoration: line-through;
+}
