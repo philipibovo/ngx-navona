@@ -1,6 +1,6 @@
 {
-  "name": "ngx-navona",
-  "version": "10.0.0",
+  "name": "@philipibovo/ngx-navona",
+  "version": "10.2.5",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
